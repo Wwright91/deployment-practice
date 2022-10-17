@@ -36,13 +36,12 @@ function App() {
         placeholder="input a drink"
       />
       <button onClick={getDrinksOnClick}>Get Drinks</button>
-      <h2 />
-      Drinks With: "{input.toUpperCase()}"<h2 />
+      <h2>Drinks With: "{input.toUpperCase()}"</h2>
       <br />
       {drinks.map((d) => {
         return (
           <div key={d.idDrink}>
-            <h3>{d.strDrink}</h3> <img src={d.strDrinkThumb} />
+            <h3>{d.strDrink}</h3> <img src={d.strDrinkThumb} alt={d.strDrink} />
             <br />
             <br />
             <div>{d.strInstructions}</div>
